@@ -53,3 +53,4 @@ const html = `<!doctype html>
 
 await writeFile(join(publicDir, "index.html"), html);
 await copyFile(join(publicDir, "index.html"), join(publicDir, "404.html"));
+await writeFile(join(publicDir, ".nojekyll"), "");
